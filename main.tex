@@ -1,14 +1,84 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
 
-\title{ModeloiCEV-TCC-ESW}
-\author{Dimmy Magalhães}
-\date{July 2023}
+%Imports necessários!
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage[brazil]{babel}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+%VARIÁVEIS RELACIONADAS AO TRABALHO
+\newcommand{\titulo}{Título do Trabalho}
+\newcommand{\palavraschavespt}{componente, formatação, estilo}
+\newcommand{\palavraschavesen}{component, formatting, style, styling, inser}
+
+
+%Dados do aluno
+\newcommand{\aluno}{Fulano de Tal da Silva}
+\newcommand{\emailAluno}{fulado.silva@somosicev.com}
+
+%Dados do orientador
+\newcommand{\orientador}{Ciclano de Tal da Silva}
+\newcommand{\emailOrientador}{ciclano.silva@somosicev.com}
+
+%Dados do curso
+\newcommand{\escola}{Escola de Tecnologia}
+\newcommand{\curso}{Engenharia de Software}
+\newcommand{\cidade}{Teresina}
+\newcommand{\uf}{PI}
 
 \begin{document}
 
+
+\title{\titulo}
+
+\author{\IEEEauthorblockN{\aluno}
+\IEEEauthorblockA{\textit{\escola} \\
+\textit{\curso}\\
+\cidade, \uf \\
+\emailAluno}
+\and
+\IEEEauthorblockN{\orientador}
+\IEEEauthorblockA{\textit{\escola} \\
+\textit{\curso}\\
+\cidade, \uf \\
+\emailOrientador
+}}
+
 \maketitle
 
-\section{Introduction}
+\input{1_resumos/resumo}
+
+\input{2_introducao/introducao}
+
+\input{3_trabalhosrelacionados/relatedwork}
+
+\input{4_metodologia/index}
+
+\input{5_abordagem/index}
+
+\input{6_experimentos/index}
+
+\input{7_resultados/index}
+
+\input{8_discussao/index}
+
+\input{9_conclusao/index}
+
+\section*{Agradecimentos}
+
+Adicione agradecimentos ao instituições, empresas de fomento.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
 
 \end{document}
